@@ -17,7 +17,7 @@ hi def link mFunction Function
 
 " Statement
 syn keyword mConditional if else
-syn keyword mKeyword fn let return
+syn keyword mKeyword fn return
 syn match mOperator '+\|-\|*\|/\|!\|'
 syn match mOperator '==\|!=\|<\|>\|'
 hi def link mConditional Conditional
