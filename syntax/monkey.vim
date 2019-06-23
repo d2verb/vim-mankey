@@ -13,7 +13,7 @@ hi def link mBoolean Boolean
 syn match mIdentifier /[[:alpha:]_]*/
 syn match mFunction /[[:alpha:]_]*/
 hi def link mIdentifier NONE
-hi def link mFunction NONE
+hi def link mFunction Function
 
 " Statement
 syn keyword mConditional if else
