@@ -24,4 +24,12 @@ hi def link mConditional Conditional
 hi def link mKeyword Keyword
 hi def link mOperator Operator
 
+" Todo
+syn keyword mTodo TODO FIXME XXX contained
+hi def link mTodo Todo
+
+" Comment
+syn match mComment /\/\/.*/ contains=mTodo
+hi def link mComment Comment
+
 let b:current_syntax = 'monkey'
