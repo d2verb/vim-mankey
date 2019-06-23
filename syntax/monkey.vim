@@ -3,26 +3,29 @@ if exists('b:current_syntax')
 endif
 
 " Constant
-syn match mString /".*"/
+syn match mString /".\{-}"/
 syn match mNumber /[[:digit:]]\+/
 syn keyword mBoolean true false
+
+hi def link mString String
 hi def link mNumber Number
 hi def link mBoolean Boolean
 
-" Identifier
-syn match mIdentifier /[[:alpha:]_]*/
-syn match mFunction /[[:alpha:]_]*/
-hi def link mIdentifier NONE
-hi def link mFunction Function
+" BuilinFn
+syn match mBuiltinFn "println\|print\|len\|first\|last\|rest"
+hi def link mBuiltinFn Function
 
 " Statement
-syn keyword mConditional if else while
-syn keyword mKeyword fn return
-syn match mOperator '+\|-\|*\|/\|!\|'
-syn match mOperator '==\|!=\|<\|>\|'
+syn keyword mConditional if else
+syn keyword mRepeat while
+syn match mOperator '+\|-\|*\|/'
+syn match mOperator '==\|!=\|<\|>'
+syn keyword mKeyword fn
+
 hi def link mConditional Conditional
-hi def link mKeyword Keyword
+hi def link mRepeat Repeat
 hi def link mOperator Operator
+hi def link mKeyword Keyword
 
 " Todo
 syn keyword mTodo TODO FIXME XXX contained
