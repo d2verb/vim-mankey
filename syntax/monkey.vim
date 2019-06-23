@@ -3,10 +3,17 @@ if exists('b:current_syntax')
 endif
 
 " Constant
+syn match mString /".*"/
 syn match mNumber /[[:digit:]]\+/
 syn keyword mBoolean true false
 hi def link mNumber Number
 hi def link mBoolean Boolean
+
+" Identifier
+syn match mIdentifier /[[:alpha:]_]*/
+syn match mFunction /[[:alpha:]_]*/
+hi def link mIdentifier NONE
+hi def link mFunction NONE
 
 " Statement
 syn keyword mConditional if else
