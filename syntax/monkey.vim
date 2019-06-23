@@ -16,7 +16,7 @@ hi def link mIdentifier NONE
 hi def link mFunction Function
 
 " Statement
-syn keyword mConditional if else
+syn keyword mConditional if else while
 syn keyword mKeyword fn return
 syn match mOperator '+\|-\|*\|/\|!\|'
 syn match mOperator '==\|!=\|<\|>\|'
