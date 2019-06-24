@@ -12,7 +12,7 @@ hi def link mNumber Number
 hi def link mBoolean Boolean
 
 " BuilinFn
-syn match mBuiltinFn "println\|print\|len\|first\|last\|rest"
+syn match mBuiltinFn "println\|print\|len\|push\|copy"
 hi def link mBuiltinFn Function
 
 " Statement
