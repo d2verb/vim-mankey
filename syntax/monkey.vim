@@ -20,7 +20,7 @@ syn keyword mConditional if else
 syn keyword mRepeat while
 syn match mOperator '+\|-\|*\|/'
 syn match mOperator '==\|!=\|<\|>'
-syn keyword mKeyword fn
+syn keyword mKeyword fn return
 
 hi def link mConditional Conditional
 hi def link mRepeat Repeat
