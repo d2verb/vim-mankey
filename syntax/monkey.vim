@@ -13,6 +13,7 @@ hi def link mBoolean Boolean
 
 " BuilinFn
 syn match mBuiltinFn "println\|print\|len\|push\|copy"
+syn match mBuiltinFn "open\|close\|read\|"
 hi def link mBuiltinFn Function
 
 " Statement
