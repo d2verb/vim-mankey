@@ -12,8 +12,7 @@ hi def link mNumber Number
 hi def link mBoolean Boolean
 
 " BuilinFn
-syn match mBuiltinFn "println\|print\|len\|push\|copy"
-syn match mBuiltinFn "open\|close\|read\|"
+syn match mBuiltinFn "println\|print\|len\|push\|copy\|open\|close\|read"
 hi def link mBuiltinFn Function
 
 " Statement
@@ -21,7 +20,7 @@ syn keyword mConditional if else
 syn keyword mRepeat while
 syn match mOperator '+\|-\|*\|/'
 syn match mOperator '==\|!=\|<\|>'
-syn keyword mKeyword fn return
+syn keyword mKeyword fn return import
 
 hi def link mConditional Conditional
 hi def link mRepeat Repeat
