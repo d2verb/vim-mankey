@@ -11,4 +11,4 @@ Plug 'd2verb/vim-mankey'
 ```
 
 ## Notes
-- This plugin is heavily inspired from [vim](https://github.com/lcolaholicl/vim-v).
+- This plugin is heavily inspired from [vim-v](https://github.com/lcolaholicl/vim-v).
